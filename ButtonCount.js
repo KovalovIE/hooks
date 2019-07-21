@@ -11,13 +11,18 @@ export default function ButtonCount(props) {
 
   useEffect(() => {
     alert(`Count now ${countDigit}`);
-  }, [countDigit]);
+  }, [countDigit]); // componentDidUpdate
 
 //   componentDidUpdate(prevProps, prevState) {
 //     if (prevState.count !== this.state.count) {
 //       document.title = `Вы нажали ${this.state.count} раз`;
 //     }
 //   }
+
+// const SampleComponent = () => {
+//     useEffect(() => {
+//       // code to run on component mount
+//     }, []) // componentDidMount
 
 // useEffect(() => {
 //     document.title = `Вы нажали ${count} раз`;
